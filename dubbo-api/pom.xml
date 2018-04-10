@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-boot-dubbo</artifactId>
+        <groupId>com.quark.dubbo</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dubbo-api</artifactId>
+
+
+    <dependencies>
+        <!--consume 官网提供的spring boot +dubbo整合包-->
+
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba.boot</groupId>-->
+            <!--<artifactId>dubbo-spring-boot-project</artifactId>-->
+            <!--<version>0.1.0</version>-->
+        <!--</dependency>-->
+
+        <!-- 解决 ：consume 连接zookeeper报错 java.lang.NoClassDefFoundError: org/I0Itec/zkclient/IZkStateListener  -->
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.10</version>
+        </dependency>
+    </dependencies>
+
+    <!--<repositories>-->
+        <!--<repository>-->
+            <!--<id>sonatype-nexus-snapshots</id>-->
+            <!--<url>https://oss.sonatype.org/content/repositories/snapshots</url>-->
+            <!--<releases>-->
+                <!--<enabled>false</enabled>-->
+            <!--</releases>-->
+            <!--<snapshots>-->
+                <!--<enabled>true</enabled>-->
+            <!--</snapshots>-->
+        <!--</repository>-->
+    <!--</repositories>-->
+</project>
